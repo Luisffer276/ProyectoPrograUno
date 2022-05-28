@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="solicitudrecursosumg.DashBoardController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="260.0" style="-fx-background-color: #120D29;">
+         <children>
+            <Pane layoutX="-1.0" layoutY="-1.0" prefHeight="74.0" prefWidth="261.0" style="-fx-background-color: #ffffff;" />
+            <Text fill="#3177b9" layoutX="78.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RS360">
+               <font>
+                  <Font name="Cambria Math" size="34.0" />
+               </font>
+            </Text>
+            <Text fill="#3177b9" layoutX="85.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resource System">
+               <font>
+                  <Font name="Cambria Math" size="11.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@luis276ffer" />
+            <Button contentDisplay="CENTER" layoutX="3.0" layoutY="157.0" mnemonicParsing="false" onAction="#gRecursos" prefHeight="42.0" prefWidth="244.0" style="-fx-background-color: transparent;" text="Gestionar Recursos" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="2.0" layoutY="206.0" mnemonicParsing="false" onAction="#gSolicitudPrestamo" prefHeight="41.0" prefWidth="245.0" style="-fx-background-color: transparent;" text="Gestionar Solicitud de Prestamo" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="2.0" layoutY="261.0" mnemonicParsing="false" onAction="#gOrganizacion" prefHeight="37.0" prefWidth="245.0" style="-fx-background-color: transparent;" text="Gestionar Organizacion" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="3.0" layoutY="311.0" mnemonicParsing="false" onAction="#gUsuarios" prefHeight="39.0" prefWidth="245.0" style="-fx-background-color: transparent;" text="Gestionar Usuarios" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="283.0" layoutY="100.0" prefHeight="150.0" prefWidth="593.0">
+        <columns>
+          <TableColumn prefWidth="53.0" text="Codio" />
+          <TableColumn prefWidth="88.0" text="Nombre" />
+            <TableColumn prefWidth="60.0" text="Usuario" />
+            <TableColumn prefWidth="82.0" text="Dirección" />
+            <TableColumn prefWidth="92.0" text="Aprobación" />
+            <TableColumn prefWidth="96.0" text="Confirmación" />
+            <TableColumn prefWidth="67.0" text="Tiempo" />
+            <TableColumn prefWidth="62.0" text="Costo" />
+        </columns>
+      </TableView>
+      <Text layoutX="569.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="283.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informacion de Recursos Prestados">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Button contentDisplay="CENTER" layoutX="10.0" layoutY="115.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="244.0" style="-fx-background-color: transparent;" text="Inicio" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="60.0" fitWidth="177.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="283.0" layoutY="264.0" mnemonicParsing="false" style="-fx-background-color: #120D29;" text="Editar" textFill="WHITE" />
+      <Button layoutX="356.0" layoutY="264.0" mnemonicParsing="false" style="-fx-background-color: #120D29;" text="Inactivar" textFill="WHITE" />
+      <ImageView fitHeight="181.0" fitWidth="729.0" layoutX="286.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@calendars-home-hero-us.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="286.0" layoutY="517.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realice sus gestiones a tiempo. Puede ver una fecha disponible acontinuación" wrappingWidth="362.9765625" />
+      <DatePicker layoutX="638.0" layoutY="509.0" prefHeight="25.0" prefWidth="225.0" />
+      <Button layoutX="286.0" layoutY="547.0" mnemonicParsing="false" style="-fx-background-color: #120D29;" text="Buscar fecha" textFill="WHITE" />
+   </children>
+</Pane>

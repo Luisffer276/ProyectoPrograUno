@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="solicitudrecursosumg.pruebaController">
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="34.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INICIA SESIÓN">
+               <font>
+                  <Font name="Cambria Math" size="45.0" />
+               </font>
+            </Text>
+            <Text layoutX="47.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="para poder solicitar un recurso de la Universidad" />
+            <TextField layoutX="101.0" layoutY="284.0" promptText="Usuario" style="-fx-background-color: transparent; -fx-border-color: #120D29; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField layoutX="101.0" layoutY="345.0" promptText="Contraseña" style="-fx-background-color: transparent; -fx-border-color: #120D29; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button layoutX="145.0" layoutY="430.0" mnemonicParsing="false" onAction="#action" style="-fx-background-color: #120D29;" text="Ingresar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fitHeight="76.0" fitWidth="91.0" layoutX="130.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@3422900cb9e9bd4ce803847129eb6c9f.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #120D29;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="85.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Universidad Mariano Gálvez">
+               <font>
+                  <Font name="Cambria Math" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="131.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="De Guatemala">
+               <font>
+                  <Font name="Cambria Math" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#e4e4e4" layoutX="35.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESOURCE">
+               <font>
+                  <Font name="Cambria Math" size="46.0" />
+               </font>
+            </Text>
+            <Text fill="#e4e4e4" layoutX="35.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM">
+               <font>
+                  <Font name="Cambria Math" size="46.0" />
+               </font>
+            </Text>
+            <Text fill="#e4e4e4" layoutX="35.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="360">
+               <font>
+                  <Font name="Cambria Math" size="46.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

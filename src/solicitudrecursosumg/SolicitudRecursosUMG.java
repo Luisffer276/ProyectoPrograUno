@@ -1,0 +1,60 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMain.java to edit this template
+ */
+package solicitudrecursosumg;
+
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+/**
+ *
+ * @author Luisf
+ */
+public class SolicitudRecursosUMG extends Application {
+
+    private double xOffset = 0;
+    private double yOffset = 0;
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("prueba.fxml"));
+
+        Scene scene = new Scene(root);
+        
+         primaryStage.initStyle(StageStyle.DECORATED.UNDECORATED);
+         root.setOnMousePressed(new EventHandler<MouseEvent>() {
+         
+          @Override public void handle(MouseEvent event) { xOffset =
+          event.getSceneX(); yOffset = event.getSceneY(); } });
+         
+          root.setOnMouseDragged(new EventHandler<MouseEvent>() {
+          @Override public void handle(MouseEvent event) {
+          primaryStage.setX(event.getSceneX() - xOffset);
+          primaryStage.setY(event.getSceneY() - yOffset); } });
+         
+
+        primaryStage.setTitle("Recursos UMG");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+}
